@@ -1,30 +1,29 @@
 /**
  * ────────────────────────────────────────────────────────────
  *  EDIT EVERYTHING ABOUT YOUR SITE HERE.
- *  Swap any placeholder below with your real details.
  * ────────────────────────────────────────────────────────────
  */
 
 export const profile = {
-  name: "Vinod Katravath",
-  shortName: "VK",
+  name: "Katravath Vinod",
+  shortName: "KV",
   role: "Full-Stack Developer",
   // The big hero line. Words wrapped in *asterisks* get the gradient highlight.
   headline: "Building *reliable, AI-powered* products at scale.",
   tagline:
-    "Full-Stack Developer with 2+ years shipping production features end to end at a healthcare startup. Strong on the fundamentals — data structures, system design, clean APIs — and hands-on putting AI into products people actually use.",
+    "Full-Stack Developer with 2 years at a healthcare startup, building production-grade apps with React, TypeScript, Node.js & MongoDB. Into microservices (gRPC, Temporal), cloud (AWS, GCP), and hands-on GenAI & real-time features people actually use.",
   availability: "Open to Software Developer roles",
   location: "Hyderabad / Remote",
 
   // ── CONTACT ────────────────────────────────────────────────
-  email: "systems@unify.digital", // ← replace with your real email
-  phone: "+91 8688725530", // ← replace / remove
-  resumeUrl: "/resume.pdf", // ← put your resume.pdf in /public
+  email: "katravathvinod2509@gmail.com",
+  phone: "+91 8688725530",
+  resumeUrl: "/resume.pdf", // replace public/resume.pdf with your real PDF
 
   socials: {
-    github: "https://github.com/", // ← your GitHub
-    linkedin: "https://linkedin.com/in/", // ← your LinkedIn
-    leetcode: "https://leetcode.com/", // ← your LeetCode (optional)
+    github: "https://github.com/Vinod2509",
+    linkedin: "https://www.linkedin.com/in/katravathvinod/",
+    leetcode: "https://leetcode.com/u/vinod_katravath/",
   },
 };
 
@@ -34,7 +33,7 @@ export const stats = [
   { value: "35%", label: "faster page loads", sub: "via render optimization" },
   { value: "2yr", label: "production exp", sub: "healthcare startup" },
   { value: "3×", label: "product lines", sub: "Stripe + Razorpay" },
-  { value: "40%", label: "lower AI cost", sub: "caching + embeddings" },
+  { value: "+40%", label: "session duration", sub: "real-time chat app" },
 ];
 
 // ── CORE STACK ───────────────────────────────────────────────
@@ -48,8 +47,8 @@ export const stack = [
   "Temporal",
   "MongoDB",
   "PostgreSQL",
+  "Redis",
   "Socket.io",
-  "Agora",
   "AWS · GCP",
   "GenAI / LLMs",
 ];
@@ -60,22 +59,22 @@ export const projects = [
     title: "MindCare AI",
     badge: "LIVE",
     description:
-      "Multi-tenant, AI-powered behavioral-health platform with role-based access across subdomain-isolated orgs. Conversational AI intake, real-time mood dashboards, and appointment workflows — secured with Postgres Row-Level Security.",
+      "Multi-tenant, AI-powered behavioral-health platform with role-based access (user / admin / superadmin) across subdomain-isolated orgs. Conversational AI intake, real-time mood dashboards, and appointment workflows — secured with Postgres Row-Level Security.",
     tags: ["Next.js", "Supabase", "RBAC · RLS", "LLM"],
-    link: "", // ← live URL or GitHub (optional)
+    link: "https://neuralcare-ai.com/",
     featured: true,
   },
   {
     title: "Real-Time Chat + Code Editor",
     description:
-      "Text / image / video chat at sub-100ms latency over Socket.io, with a collaborative code editor. Drove +40% session duration.",
-    tags: ["Socket.io", "Node", "MongoDB", "Agora"],
+      "Text / image / video chat at sub-100ms latency over Socket.io & WebSockets, with JWT-secured APIs. Drove +40% session duration and +20% user retention.",
+    tags: ["Socket.io", "Node.js", "Express", "MongoDB"],
     link: "",
   },
   {
     title: "Multi-provider Payments",
     description:
-      "Stripe + Razorpay integration powering secure transactions across 3 product lines with flexible, config-driven setups.",
+      "Stripe + Razorpay integration powering secure transactions across 3 product lines with flexible, config-driven setups and streamlined payment workflows.",
     tags: ["Stripe", "Razorpay", "Webhooks"],
     link: "",
     accent: true,
@@ -87,16 +86,25 @@ export const experience = [
   {
     company: "Unify Technologies",
     role: "Full-Stack Developer",
-    period: "2023 — Present",
+    period: "Feb 2025 — Present",
     current: true,
     points: [
-      "Shipped production features end to end for a healthcare platform using React, TypeScript, Node.js & MongoDB.",
-      "Built distributed services with microservices architecture (gRPC, Temporal) for reliable, scalable workflows.",
-      "Integrated GenAI & LLM-powered workflows; cut AI cost ~40% with caching and embeddings.",
-      "Delivered real-time features (Agora, Socket.io) and cloud integrations across AWS & GCP.",
+      "Architected and delivered full-stack modules end to end — schema design, NestJS REST APIs, and React + TypeScript + Tailwind frontends.",
+      "Built scalable UI workflows with dynamic state & optimized rendering, cutting average page load time by 35%.",
+      "Shipped multi-provider payments (Stripe, Razorpay) with flexible configs across 3 product lines.",
+      "Integrated LLM APIs (OpenAI / Gemini) for summarization, intelligent auto-fill & assistants; built Temporal-powered AI inference pipelines and semantic search.",
     ],
   },
-  // Add more roles here if you have them.
+  {
+    company: "Civil Guruji",
+    role: "Full-Stack Developer Intern",
+    period: "Jun 2024 — Dec 2024",
+    points: [
+      "Built end-to-end auth (login, signup, password reset) with React + Express and JWT sessions.",
+      "Shipped subscription & review workflows, driving a 30% increase in platform participation within 3 months.",
+      "Developed responsive job listing & application flows, cutting candidate submission time by 25%.",
+    ],
+  },
 ];
 
 // ── WHAT I DO ────────────────────────────────────────────────
@@ -104,7 +112,7 @@ export const services = [
   {
     title: "Full-Stack Development",
     description:
-      "Scalable web apps end to end — clean APIs, typed frontends, and reliable backends.",
+      "Scalable web apps end to end — clean NestJS APIs, typed React frontends, reliable backends.",
   },
   {
     title: "Distributed Systems",
@@ -114,11 +122,11 @@ export const services = [
   {
     title: "GenAI Integration",
     description:
-      "LLM-powered features, embeddings & RAG that ship to real users — cost-aware and fast.",
+      "LLM-powered features, semantic search & AI workflows that ship to real users.",
   },
   {
     title: "Real-Time & Cloud",
     description:
-      "Low-latency real-time (Socket.io, Agora) and cloud delivery on AWS & GCP.",
+      "Low-latency real-time (Socket.io, WebSockets) and cloud delivery on AWS & GCP.",
   },
 ];

@@ -18,8 +18,8 @@ export const profile = {
   // ── CONTACT ────────────────────────────────────────────────
   email: "katravathvinod2509@gmail.com",
   phone: "+91 8688725530",
-  resumeUrl: "/resume.pdf", // replace public/resume.pdf with your real PDF
-  photo: "/profile.jpg", // drop your photo at public/profile.jpg (placeholder: /profile.svg)
+  resumeUrl: "/ResumeVInod.pdf",
+  photo: "/passportpic-removebg-preview.png",
 
   socials: {
     github: "https://github.com/Vinod2509",

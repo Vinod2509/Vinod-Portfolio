@@ -192,8 +192,13 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: top center;
   border-radius: 18px;
   display: block;
+  /* transparent cutout sits on an on-theme teal gradient */
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(88,207,134,0.22), transparent 60%),
+    linear-gradient(160deg, #d8f2ee 0%, #eef0e9 55%, #ffffff 100%);
 }
 .photo__plate {
   display: flex; flex-direction: column;

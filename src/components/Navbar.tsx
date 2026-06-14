@@ -41,7 +41,11 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a className="btn btn-dark nav__cta" href={profile.resumeUrl} download>
+        <a
+          className="btn btn-dark nav__cta"
+          href={profile.resumeUrl}
+          download="Katravath-Vinod-Resume.pdf"
+        >
           Résumé <Download size={16} />
         </a>
       </div>

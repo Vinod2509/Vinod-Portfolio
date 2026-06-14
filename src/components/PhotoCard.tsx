@@ -19,9 +19,6 @@ export default function PhotoCard() {
         <img
           src={profile.photo}
           alt={profile.name}
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).src = "/profile.svg";
-          }}
         />
         <div className="photo__plate">
           <span className="photo__name">{profile.name}</span>

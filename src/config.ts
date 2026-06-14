@@ -18,7 +18,7 @@ export const profile = {
   // ── CONTACT ────────────────────────────────────────────────
   email: "katravathvinod2509@gmail.com",
   phone: "+91 8688725530",
-  resumeUrl: "/ResumeVInod.pdf",
+  resumeUrl: "/Katravath-Vinod-Resume.pdf",
   photo: "/passportpic-removebg-preview.png",
 
   socials: {

@@ -47,7 +47,11 @@ export default function Contact() {
               <a className="btn btn-primary" href={`mailto:${profile.email}`}>
                 <Mail size={17} /> Email me
               </a>
-              <a className="btn btn-ghost" href={profile.resumeUrl} download>
+              <a
+                className="btn btn-ghost"
+                href={profile.resumeUrl}
+                download="Katravath-Vinod-Resume.pdf"
+              >
                 <Download size={17} /> Download résumé
               </a>
             </div>

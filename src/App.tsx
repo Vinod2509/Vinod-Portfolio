@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 import "./app.css";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { Mail, Phone, ArrowUpRight, Download } from "lucide-react";
+import { track } from "@vercel/analytics";
 import { profile } from "../config";
 import Reveal from "./Reveal";
 
@@ -51,6 +52,7 @@ export default function Contact() {
                 className="btn btn-ghost"
                 href={profile.resumeUrl}
                 download="Katravath-Vinod-Resume.pdf"
+                onClick={() => track("resume_download", { from: "contact" })}
               >
                 <Download size={17} /> Download résumé
               </a>

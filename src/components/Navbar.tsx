@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
+import { track } from "@vercel/analytics";
 import { profile } from "../config";
 
 const links = [
@@ -45,6 +46,7 @@ export default function Navbar() {
           className="btn btn-dark nav__cta"
           href={profile.resumeUrl}
           download="Katravath-Vinod-Resume.pdf"
+          onClick={() => track("resume_download", { from: "navbar" })}
         >
           Résumé <Download size={16} />
         </a>

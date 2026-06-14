@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Github, Linkedin, Code2 } from "./BrandIcons";
 import { profile } from "../config";
+import PhotoCard from "./PhotoCard";
 
 /** Renders headline with *highlighted* words in gradient. */
 function Headline({ text }: { text: string }) {
@@ -117,73 +118,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* floating preview card */}
-        <motion.div
-          className="hero__card"
-          initial={{ opacity: 0, scale: 0.94, y: 30 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-        >
-          <motion.div
-            className="hero__phone"
-            animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <div className="phone__top">
-              <span className="phone__hi">Hello 👋</span>
-              <span className="phone__menu">≡</span>
-            </div>
-            <div className="phone__score">
-              <span className="phone__label">Overall Wellbeing</span>
-              <div className="phone__big">
-                72<small>/100</small>
-              </div>
-              <span className="phone__chip">▲ Moderate</span>
-            </div>
-            <div className="phone__rows">
-              {[
-                ["Mood Stability", 66],
-                ["Anxiety Level", 48],
-                ["Sleep Quality", 72],
-                ["Social Connection", 60],
-              ].map(([k, v]) => (
-                <div className="phone__row" key={k as string}>
-                  <span>{k}</span>
-                  <div className="phone__bar">
-                    <motion.i
-                      initial={{ width: 0 }}
-                      animate={{ width: `${v}%` }}
-                      transition={{ delay: 0.9, duration: 1 }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="phone__ai">
-              <strong>AI Recommendation</strong>
-              <p>Continue your routine and follow up in 7 days.</p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="hero__float hero__float--a"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <span className="float__k">PHQ-9 Score</span>
-            <span className="float__v">14 / 27</span>
-            <span className="float__t">Moderate</span>
-          </motion.div>
-
-          <motion.div
-            className="hero__float hero__float--b"
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <span className="float__k">HIPAA</span>
-            <span className="float__v grad-text">Compliant</span>
-          </motion.div>
-        </motion.div>
+        <PhotoCard />
       </div>
     </section>
   );

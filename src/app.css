@@ -154,6 +154,76 @@
   .hero__float--b { right: 2%; }
 }
 
+/* ───────────────────────── PHOTO CARD ───────────────────────── */
+.photo { position: relative; display: grid; place-items: center; }
+.photo__glow {
+  position: absolute;
+  width: 115%; height: 115%;
+  border-radius: 40px;
+  background: var(--grad);
+  filter: blur(60px);
+  opacity: 0.28;
+  z-index: 0;
+}
+.photo__frame {
+  position: relative;
+  z-index: 1;
+  width: 330px; max-width: 80vw;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #fff;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+.photo__frame::before {
+  content: "";
+  position: absolute; inset: 0;
+  border-radius: 26px;
+  padding: 2px;
+  background: var(--grad);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.photo__frame img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+.photo__plate {
+  display: flex; flex-direction: column;
+  padding: 14px 8px 6px;
+}
+.photo__name { font-family: var(--font-display); font-weight: 700; font-size: 18px; }
+.photo__role {
+  font-family: var(--font-mono); font-size: 12px;
+  color: var(--teal-deep); margin-top: 2px;
+}
+.photo__badge {
+  position: absolute;
+  z-index: 2;
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px 16px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--line);
+  display: flex; flex-direction: column;
+}
+.photo__badge--a { top: 8%; left: -8%; }
+.photo__badge--b { bottom: 14%; right: -6%; }
+.badge__k { font-size: 11px; color: var(--ink-faint); }
+.badge__v { font-family: var(--font-display); font-weight: 700; font-size: 17px; }
+
+@media (max-width: 900px) {
+  .photo__badge--a { left: 0; }
+  .photo__badge--b { right: 0; }
+}
+
 /* ───────────────────────── STATS ───────────────────────── */
 .stats { padding: 30px 0 80px; }
 .stats__band {
